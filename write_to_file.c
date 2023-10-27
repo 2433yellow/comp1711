@@ -2,10 +2,15 @@
 
 int main() {
     char filename [] = "data.txt";
-    FILE *file = fopen(filename, "w"); // or "a", "w+", "a+" create a file
+    FILE *file = fopen(filename, "a"); /* or "a" adds wat u ask them, "w+", 
+    "a+" append plus read create a file fopen chck
+    kbdnb
+    ffggg
+    ggggg
+    */
     if (file == NULL) {     //checks errors
         perror("");
-        return 1;
+        return 1; //1 means error file is empty
     }
 
     int number, num_lines = 10; //sets integers
